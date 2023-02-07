@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tesla Luxury Automotiv</title>
+    <link rel ="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header" id="header">
+        <div style="display: flex; align-items: center; justify-content: space-between">
+            <img src="images/LogoTesla2.png" class="logo">
+            <a href="#" id="models">Model S </a>
+            <a href="#" id="model3">Model 3 </a>
+            <a href="#" id="modelx">Model X </a>
+            <a href="#" id="modely">Model Y </a>
+            <a href="SecondPage.html" class ="btn">Model G</a>
+        </div>
+            <div class="footer">
+                <div class="footer_info">
+                    <h2 id="velocity" style="font-size: 44px">600 km</h2>
+                    <p class="footer_info_p">Autonomia</p>
+                </div>
+
+                <div class="footer_info">
+                    <h2 id="time" style="font-size: 44px">2,1 s</h2>
+                    <p class="footer_info_p">0-100 km/h*</p>
+                </div>
+
+                <div class="footer_info">
+                    <h2 id="kmh" style="font-size: 44px">322 km/h</h2>
+                    <p class="footer_info_p">Velocita' massima*</p>
+                </div>
+
+                <div class="footer_info">
+                    <h2 id="model" style="font-size: 44px">Model S</h2>
+                    <p class="footer_info_p"></p>
+                </div>
+            </div>
+    </div>
+
+          <script>
+
+            var header = document.getElementById("header");
+            var ms = document.getElementById("models");
+            var m3 = document.getElementById("model3");
+            var mx = document.getElementById("modelx");
+            var my = document.getElementById("modely");
+            var model = document.getElementById("model");
+            var velocity = document.getElementById("velocity");
+            var time = document.getElementById("time");
+            var kmh = document.getElementById("kmh");
+
+            ms.onclick =function(){
+                header.style.backgroundImage = "url(images/image-1.png)";
+                model.innerHTML = "Model S";
+                velocity.innerHTML = "600 km";
+                time.innerHTML = '2,1 s';
+                kmh.innerHTML  = "322 km/h";
+            }
+            m3.onclick =function(){
+                header.style.backgroundImage = "url(images/image-2.png)";
+                model.innerHTML = "Model 3";
+                velocity.innerHTML = "602 km";
+                time.innerHTML = '3,3 s';
+                kmh.innerHTML  = "280 km/h";
+            }
+            mx.onclick =function(){
+                header.style.backgroundImage = "url(images/image-3.png)";
+                model.innerHTML = "Model X";
+                velocity.innerHTML = "543 km";
+                time.innerHTML = '2,6 s';
+                kmh.innerHTML  = "262 km/h";
+            }
+            my.onclick =function(){
+                header.style.backgroundImage = "url(images/image-4.png)";
+                model.innerHTML = "Model Y";
+                velocity.innerHTML = "533 km";
+                time.innerHTML = '3,2 s';
+                kmh.innerHTML  = "250 km/h";
+            }
+
+          </script>
+
+      </body>
+    </html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tesla Luxury Automotiv</title>
+    <link rel ="stylesheet" href="Style2.css">
+</head>
+<body>
+    <div class="header" id="header">
+        <div style="display: flex; align-items: center; justify-content: space-between">
+            <img src="images/LogoTesla2.png" class="logo">
+            <a href="#" id="models"> </a>
+            <a href="#" id="model3">Home Connection </a>
+            <a href="#" id="modelx">Starlink </a>
+            <a href="#" id="modely">Batteria al Grafene </a>
+            <a href="Tesla.html" class ="btn">Torna indietro</a>
+        </div>
+        <div class="footer">
+            <div class="footer_info" style="margin-right: 30px">
+                <h2 id="_h2" style="font-size: 44px">975 Km*</h2>
+                <p1 class="footer_info_p" id = "_p" >Autonomia fuori dal comune grazie al Grafene</p1>
+            </div>
+            <div class="footer_info" style="margin-right: 30px">
+                <h2 id = "_h2_2" style="font-size: 44px"> 2,1 s</h2>
+                <p1 class="footer_info_p" id = "_p2"> 0-100 km/h*</p1>
+            </div>
+            <div class="footer_info" style="margin-right: 30px">
+                <h2 id = "_h2_3" style="font-size: 44px">322 km/h </h2>
+                <p1 class="footer_info_p" id = "_p3"> Velocita' massima</p1>
+            </div>
+            <div class="footer_info">
+                <h2 id="model" style="font-size: 44px">Model G</h2>
+                <p1 class="footer_info_p"></p1>
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+        </div>
+
+      <script>
+
+        var header = document.getElementById("header");
+        var ms = document.getElementById("models");
+        var m3 = document.getElementById("model3");
+        var mx = document.getElementById("modelx");
+        var my = document.getElementById("modely");
+        var model = document.getElementById("model");
+
+        var _h2 = document.getElementById("_h2");
+        var _p = document.getElementById("_p");
+
+        var _h2_2 = document.getElementById("_h2_2");
+        var _p2 = document.getElementById("_p2");
+
+        var _h2_3 = document.getElementById("_h2_3");
+        var _p3 = document.getElementById("_p3");
+
+        ms.onclick =function(){
+            header.style.backgroundImage = "url(images/Modello1.png)";
+            model.innerHTML = "Model G";
+
+            _h2.innerHTML = "970 Km*";
+            _p.innerHTML = "Autonomia fuori dal Comune grazie al Grafene";
+
+            _h2_2.innerHTML = "2,1 s";
+            _p2.innerHTML = "0-100 km/h*";
+
+            _h2_3.innerHTML = "322 km/h*";
+            _p3.innerHTML = "Velocita' massima";
+
+        }
+
+        m3.onclick =function(){
+            header.style.backgroundImage = "url(images/HomeConnection3.png)";
+            model.innerHTML = "Home Connection";
+
+            _h2.innerHTML = "Accesso remoto";
+            _p.innerHTML = "Connessione costante con la tua Smart Home";
+
+            _h2_2.innerHTML = "Tutto sotto controllo";
+            _p2.innerHTML = "Accedi alle tue videocamere di sorveglianza attraverso il Display";
+
+            _h2_3.innerHTML = "Gestione Domotica";
+            _p3.innerHTML = "\"Hey Tesla, accendi i riscaldamenti quando saro' a un'ora da casa\"";
+        }
+        mx.onclick =function(){
+            header.style.backgroundImage = "url(images/AntennaStarlink.png)";
+            model.innerHTML = "Starlink";
+
+            _h2.innerHTML = "Velocita' di connessione";
+            _p.innerHTML = "200 Mbps";
+
+            _h2_2.innerHTML = "Router Mobile";
+            _p2.innerHTML = "Accesso a internet sempre e ovunque";
+
+            _h2_3.innerHTML = "Utilizzo intelligente";
+            _p3.innerHTML = "Migliora le funzionalita' di navigazione e intrattenimento";
+        }
+        my.onclick =function(){
+            header.style.backgroundImage = "url(images/ModelloBatteria.png)";
+            model.innerHTML = "Batteria al Grafene";
+
+            _h2.innerHTML = "Potenza Batteria";
+            _p.innerHTML = "480 Kw";
+
+            _h2_2.innerHTML = "Tempo di ricarica";
+            _p2.innerHTML = "8 min*";
+
+            _h2_3.innerHTML = "Autonomia Massima";
+            _p3.innerHTML = "990 km*";
+        }
+
+      </script>
+
+  </body>
+</html>
